@@ -1,4 +1,4 @@
-object test {
+object scala_test {
   def main(args: Array[String]): Unit = {
 
 ////    Print the elements in the odd indexes (index starts at 0) -- Start
@@ -79,6 +79,34 @@ object test {
 //    }
 //    print(result(10))
   //    ----------------------------------------
+
+    import org.apache.spark.SparkContext
+
+//    val sc = new SparkContext("local[2]","Use_parallelize_example")
+//    val mylist = Array(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+//    val rdd1 = sc.parallelize(mylist)
+
+
+//    ~~~~~~~~~~~~~~~~~~~~~~~~~~~Mean and AVG ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+////    println(rdd1.mean())
+//
+//    val sum1 = rdd1.reduce((x,y)=>x+y)
+////    val avg = sum1/(mylist.length)
+////    val cnt = rdd1.count().toDouble
+//    val cnt = rdd1.count()
+//
+//    println("Sum is : ", sum1)
+//    println("count of elements : ", cnt)
+//    println("Average is : ", sum1/cnt)
+//    println("Mean is : ", rdd1.mean())
+    //    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//    // Filter() function
+//
+//    val filteredRdd = rdd1.filter(x => x % 20 == 0)
+//    filteredRdd.collect.foreach(println)
+    //    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
   }
 }
